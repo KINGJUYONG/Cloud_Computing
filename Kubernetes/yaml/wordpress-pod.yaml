@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wordpress-pod
+  namespace: wordpress
+  labels:
+    app: wordpress
+spec:
+  containers:
+  - name: wordpress-container
+    image: wordpress:latest
+    ports:
+    - containerPort: 80
+
